@@ -1,0 +1,11 @@
+# DELETE나 UPDATE시 안전 모드가 작동된 것이다.
+
+Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.  To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+
+1. 옵션 바꾸기
+SET SQL_SAFE_UPDATES = 0;
+
+2.
+Edit -> Preferences -> SQL Editor -> Safe Updates 체크박스의 체크 해제
+
+둘 다 하는게 좋을듯 티톨에서 이렇게 하라고 하셨다.

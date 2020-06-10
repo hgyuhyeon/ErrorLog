@@ -1,0 +1,13 @@
+# CSV(엑셀)파일 내에 NULL값이 있어 LOAD 시 에러가 날 때
+
+1.
+select @@global.sql_mode;
+이 코드를 실행시켜봅시다.
+
+2. 뭔가 구린 게 많은데
+set @@global.sql_mode="NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION";
+이렇게 바꿔줍니다
+
+2-1. 그러나 필자는 저렇게 했다가 요구사항이 너무 많다고 또 당했습니다.
+set @@global.sql_mode="NO_ENGINE_SUBSTITUTION";
+저는 이렇게만 해놨습니다.

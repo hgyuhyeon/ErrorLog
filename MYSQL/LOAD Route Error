@@ -1,0 +1,17 @@
+# 파일을 로드하다보면 높은 확률로 오류가 나게 되어있어요
+  아주 그지같아요
+  뭐 방법 많긴한데 가장 간단한 방법입니다.
+
+
+Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement
+
+SHOW VARIABLES LIKE 'secure_file%';
+이걸 실행시켜보세요.
+그 다음에 values에 보시면 경로가 하나 떠있을거랍니다.
+그 경로를 따라 LOAD하고자 하는 파일을 넣어주세요
+
+대부분 경로는 C:/ProgramData/~~ 인데 ProgramData 폴더는 숨김폴더예요.
+안보인다면 숨김폴더를 표시해줍시다.
+
+그 외에 새로운 경로를 지정하는 방법도 있지만
+그거는 인터넷에 많은 천재들이 돌아다니니 그분들을 참고해주세요.

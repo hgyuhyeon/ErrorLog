@@ -1,0 +1,3 @@
+Scanner를 한 번 close하면 System.in도 close되므로
+한 번 close한 scanner는 재사용할 수 없다.
+고로 하나 갖고 써먹다가 프로그램이 종료될 때 같이 close 하는 것이 바람직함

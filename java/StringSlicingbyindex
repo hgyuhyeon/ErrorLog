@@ -1,0 +1,5 @@
+# 인덱스를 기준으로 문자열 슬라이싱
+String str; <- 임의의 문자열이 있다고 할 때
+int index = str.indexOf(" "); /* 공백 기준, 다른 문자(a 등)도 가능 */
+str1 = str.substring(0, index); <- 인수 자리에는 정수만 가능함
+str2 = str.substring(index + 1);

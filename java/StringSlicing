@@ -3,3 +3,7 @@ String str; <- 임의의 문자열이 있다고 할 때
 int index = str.indexOf(" "); /* 공백 기준, 다른 문자(a 등)도 가능 */
 str1 = str.substring(0, index); <- 인수 자리에는 정수만 가능함
 str2 = str.substring(index + 1);
+
+#split 이용하여 특정 문자 기준으로 슬라이싱
+String substr = str.split(" ", 2); 
+/* split() 함수는 나눠진 문자열을 문자열 배열로 반환한다. 뒤에 2는 나눌 수 있는 최대 문자열 */

@@ -1,0 +1,17 @@
+#ubuntu 서버 세팅 - 서버 호스팅 편
+사용 OS - ubuntu 18.04
+
+php는 그냥
+apache2, php 순서로 깔아주고 ip주소 치면 서버 나타남
+
+jsp - 2020 2학기 세팅
+1. tomcat 설치
+apt-get install tomcat8
+ip주소:8080 하면 index.jsp와 함께 It works 창이 나타남
+만약 안 나타난다면? -> 호스팅 서버의 8080포트를 열어줬나 확인하기(네이버 클라우드 서버의 경우 ACG 설정)
+2. mysql 설치
+apt-get install mariadb-server
+mysql <-> mariadb 는 API 호환되므로 ㄱㅊ
+외부접속 열 필요 있으면 mysql 폴더의 extern access 파일 참고
+-> 이때는 3306포트 열어줘야 함
+3. 개발 시작 

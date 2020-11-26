@@ -1,0 +1,9 @@
+# HTML에서 form에 입력한 값을 받아올 때 겪을 수 있는 exception. 
+주로 getParameter(); 에서 발생한다
+
+solution: 삼항연산자 사용하여 해결
+예: value 값이 null일 때(입력값이 없을 때)
+String str = getParameter("value")==null?"":getParameter("value");
+-> value값이 null이면(전달되지 않으면) 공백을 입력, 값이 있으면 해당 값 입력
+String str = getParameter("value")==""?"0":getParameter("value");
+-> value값이 없으면(입력이 없음) "0"(정수 parseInt 시 활용 가능), 있으면 해당 값 입력

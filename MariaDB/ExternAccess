@@ -1,0 +1,15 @@
+Extern Access for MariaDB
+for ubuntu
+
+1. sudo netstat -antp | grep mysql로 연결상태 체크
+127.0.0.1:3306 처리가 되어있으면 로컬에서만 접속 가능
+
+2. /etc/mysql/mariadb.conf.d 폴더로 이동
+
+3. 50-server.cnf 파일 찾아서 open
+
+4. bind address = 127.0.0.1 부분을 주석처리하거나 0.0.0.0 으로 바꾼다
+
+5. sudo service mysql restart (적용 뒤 재시작)
+
+6. 1번의 명령어 이용하여 바뀌었는지 

@@ -1,0 +1,8 @@
+modify folder owner
+
+파일/폴더 소유권자를 변경하는 명령
+
+chown {소유권자}:{그룹식별자} {소유권을 변경하고 싶은 디렉토리명}
+ex: chown tomcat8 room
+
+출처: https://araikuma.tistory.com/117 [프로그램 개발 지식 공유]

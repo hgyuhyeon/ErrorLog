@@ -14,4 +14,6 @@ apt-get install mariadb-server
 mysql <-> mariadb 는 API 호환되므로 ㄱㅊ
 외부접속 열 필요 있으면 mysql 폴더의 extern access 파일 참고
 -> 이때는 3306포트 열어줘야 함
-3. 개발 시작 
+3. mysql driver 따로 갖고온 거 있으면 그거는 
+/usr/share/tomcat8/lib 밑에 넣으면 돌아감 
+4. 개발 시작!

@@ -1,0 +1,19 @@
+timezone 에러가 뜰 때
+: 주로 mysql 드라이버 8.0 이상 버전에서 발생한다고 함
+시스템 시간인 KST를 못알아먹는 현상으로
+
+mysql에 접속하여
+set global.time_zone='+9:00';
+set time_zone='9:00';
+
+이거 두 개 입력하고
+select @@global.time_zone, @@session.time_zone; 해서
+결과가 +9:00 뜨면 성공 ㅇㅇ
+
+mysqld 위치에 default-time-zone 설정하기도 해보긴 했는데
+그것도 안먹히길래 해봤더니
+저게 됨
+
+참고한 글: https://jwkim96.tistory.com/23
+
+이상!

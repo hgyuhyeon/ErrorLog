@@ -1,0 +1,12 @@
+mysql-connector-java-8.0.22.jar 설치경로
+
+: /usr/share/tomcat8/lib
+여기다넣으면 돌아감
+안된다면
+
+/usr/share/java
+여기나
+
+/var/lib/tomcat8/webapps/ROOT/WEB-INF/lib
+여기
+

@@ -1,0 +1,7 @@
+form에서 값을 전송할 때 hidden 데이터 사용방법
+간결하게 예시만 감
+
+<form method="post" action="updatetest.jsp">
+  <input type="hidden" name="testid" value="<%=testID%>">
+  <buttone type="submit" onclick="location.href = 'updatetest.jsp'">제출</button>
+</form>

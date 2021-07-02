@@ -1,0 +1,7 @@
+마이그레이션 변경사항은 없는데 데이터베이스엔 반영되지 않아서 나는 오류~! 
+예를 들면 no such column 오류 등이 있다
+
+인터넷에 방법 많긴한데 가장 확실한 방법은
+migration폴더 안에 있는 .py파일들 중 __init__.py부분을 제외한 나머지 파일들 중에서 문제가 되는 모델이 있는 코드들을 주석처리해준다
+그 뒤 makemigrations, migrate 순서대로 진행하면 갱신 완료
+-> 혹시 잘 안된다 싶으면 python manage.py makemigrations appname 이런식으로 해보면 된다~
